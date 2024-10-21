@@ -1,0 +1,677 @@
+
+
+
+header {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    z-index: 1000;
+    top: 0;
+    nav {
+
+        ul {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 2rem;
+            gap: 2rem;
+            list-style: none;
+            background: #fff;
+            border-bottom-left-radius: 2rem;
+            border-bottom-right-radius: 2rem;
+
+
+            li {
+
+
+                a {
+                    text-decoration: none;
+                    color: #1904da;
+                    font-size: 1.5rem;
+                    font-weight: 500;
+                    text-transform: uppercase;
+                }
+            }
+        }
+
+        
+ 
+    }
+}
+
+.main {
+    width: 100vw;
+    height: calc(100vh + 2rem);
+    position: relative;
+    z-index: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .backgroundWrapper {
+        position: absolute;
+        z-index: 100;
+        width: 100%;
+        height: 100%;
+        .opacity {
+            background: #000;
+            opacity: .5;
+            width: 100%;
+            height: 100%;
+            box-sizing: content-box;
+            position: absolute;
+        }
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    .mainContainer {
+        position: relative;
+        z-index: 10000;
+        display: flex;
+        justify-content: space-between;
+        width: clamp(20rem, 100%, 100rem);
+        margin-top: 6rem;
+        gap: 5rem;
+
+        .mainText {
+            display: flex;
+            flex-direction: column;      
+            margin-left: 4rem;
+            width: 50rem;
+            h1 {
+                font-size: 4rem;
+                color: #fff;
+            }
+
+            .line {
+                margin-top: 1rem;
+                background: #fff;
+                height: .1rem;
+                width: 50%;
+                box-sizing: content-box;
+            }
+
+            p {
+                margin-top: 2rem;
+                color: #fff;
+                font-size: 1.5rem;
+                font-weight: 600;
+            }
+
+            .auspiciadoresContainer {
+                position: absolute;
+                bottom: 0;
+                width: 100%;
+                h2 {
+                    font-size: 2rem;
+                    color: #fff;
+                    font-weight: 500;
+                    margin-top: 2rem;
+                }
+    
+                .auspiciadores {
+                    display: flex;
+                    margin-top: 2rem;
+                    
+                    gap: 1rem;
+                    position: relative;
+    
+                    img {
+                        border: #000 solid 2px;
+                        background: #fff;
+                        border-radius: 2rem;
+                        width: 200px;
+                        height: 100px;
+                        padding: 1rem;
+                        object-fit: cover;
+                
+                    }
+                }
+            }
+        }
+
+        .mainCard {
+            margin-right: 2rem;
+            .cardWrapper {
+                width: clamp(20rem,30rem,31rem);
+                height: 90%;
+
+                .buttomContainer {
+
+                    padding: 1rem;
+                    background: #fff;
+                    border-bottom-left-radius: 2rem;
+                    border-bottom-right-radius: 2rem;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+        
+                    
+                    a {
+                        font-size: 2rem;
+                        font-weight: 600;
+                        text-decoration: none;
+                        color: #1904da;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+.upfront {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 3rem;
+    .upfrontContainer {
+        width: 100vw;
+        margin-top: 6rem;
+        gap: 3rem;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        
+        .servicesContainer {
+            display: flex;
+            gap: 5rem;
+            flex-direction: column;
+            place-items: center;
+            width: clamp(30rem, 90%, 110rem);
+            h2 {
+                font-size: clamp(3rem, 5rem, 7rem);
+                color: #1904da;
+            }
+
+            .textService {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border: #1904da solid 3px;
+                border-bottom-left-radius: 2rem ;
+                border-top-right-radius: 2rem;
+                p {
+                    text-align: center;
+                    color: #1904da;
+                    margin: 2rem;
+                    font-size: 2rem;
+                    font-weight: 600;
+                }
+            }
+
+            img {
+                width: 80%;
+            }
+            
+            .services {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                gap: 3rem;
+    
+                .service {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    background: #1904da;
+                    border-bottom-left-radius: 2rem ;
+                    border-top-right-radius: 2rem;
+                    text-decoration: none;
+    
+                    img {
+                        height: 18.75rem;
+                        width: 100%;
+                        border-top-right-radius: 2rem;
+                    }
+    
+                    h3 {
+                        color: #fff;
+                        font-size: 2rem;
+                        margin: 1rem;
+                    }
+    
+                    p {
+                        color: #fff;
+                        font-size: 1.5rem;
+                        margin: 2rem;
+                    }
+                }
+    
+    
+            }
+        }
+
+
+        .trabajosContainer {
+
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+            position: relative;
+            align-items: center;
+
+            .titleTrabajos {
+                width: 60%;
+                background: #1904da;
+                position: absolute;
+                left: 0;
+                padding: 2rem;
+                h2 {
+                    font-size: 2rem;
+                    color: #fff;
+    
+                }
+            }
+
+            .renovation {
+                display: grid;
+                width: clamp(20rem, 90%, 110rem);
+                place-items: center;
+                grid-template: 
+                [row1-start] "text slider" 20rem [row1-end]
+                / 1fr 3fr;
+                background: #1904da;
+                margin-top: 10rem;
+
+                h3 {
+                    text-align: center;
+                    grid-area: text;
+                    font-size: 3rem;
+                    font-weight: 500;
+                    color: #fff;
+                    margin: 1rem;
+                }
+            }
+
+
+            .reparacion {
+                display: grid;
+                place-items: center;
+                grid-template: 
+                [row1-start] "slider text" 20rem [row1-end]
+                / 3fr 1fr;
+                background: #1904da;
+                width: clamp(20rem, 90%, 110rem);
+                margin-top: 4rem;
+                h3 {
+                    grid-area: text;
+                    text-align: center;
+                    font-size: 3rem;
+                    font-weight: 500;
+                    color: #fff;
+                    margin: 1rem;
+                }
+            }
+
+            .fabricacion {
+                display: grid;
+                place-items: center;
+                grid-template: 
+                [row1-start] "text slider" 20rem [row1-end]
+                / 1fr 3fr;
+                width: clamp(20rem, 90%, 110rem);
+                background: #1904da;
+                margin-top: 4rem;
+
+                h3 {
+                    text-align: center;
+                    grid-area: text;
+                    font-weight: 500;
+                    font-size: 3rem;
+                    color: #fff;
+                    margin: 1rem;
+                }
+                
+            }
+
+            .ventasInsta {
+                display: grid;
+                place-items: center;
+                grid-template: 
+                [row1-start] "slider text" 20rem [row1-end]
+                / 3fr 1fr;
+                background: #1904da;
+                width: clamp(20rem, 90%, 110rem);
+                margin-top: 4rem;
+
+
+                h3 {
+                    text-align: center;
+                    grid-area: text;
+                    font-size: 3rem;
+                    font-weight: 500;
+                    color: #fff;
+                    margin: 1rem;
+                }
+            }
+
+            .galeryContainer {
+                width: clamp(20rem, 90%, 110rem);
+
+                .gallery {
+                    display: grid;
+                    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+                    gap: 2rem;
+                    img {
+                        width: 300px;
+                        height: 200px;
+                    }
+                }
+
+                .galleryFabrication {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 2rem;
+
+                    div{
+                        display: grid;
+                        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+                        gap: 1rem;
+                        
+
+                        .autobusText {
+                            background: #1904da;
+                            display: flex;
+                            align-items: center;
+                            
+
+                            h1 {
+                                text-align: center;
+                                font-size: 2rem;
+                                margin: 1rem;
+                                color: #fff;
+                            }
+                        }
+
+                        img {
+                            width: 300px;
+                            height: 200px;
+                        }
+                    }
+                }
+            }
+        }
+
+        .contrato {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 5rem;
+            width: clamp(20rem, 100%, 110rem);
+
+
+            .contratoText {
+                background: #1904da;
+                margin: 2rem;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                h4 {
+                    text-align: center;
+                    margin: 2rem;
+                    font-size: 2.5rem;
+                    color: #fff;
+                    
+                }
+
+            }
+
+            .contraContain {
+                display: grid;
+                height: 30rem;
+                width: 100%;
+                overflow: hidden;
+                grid-template: 
+                [row1-start] "cont1 cont1 cont4" 1fr [row1-end]
+                [row2-start] "cont2 cont2 cont4" 1fr [row2-end]
+                [row3-start] "cont3 cont3 cont4" 1fr [row3-end]
+                /1fr 1fr 1fr ;
+
+                div {
+                    height: 10rem;
+                }
+
+                .cont1 {
+                    
+                    grid-area: cont1;
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                        object-position: center;
+                    }
+                }
+
+                .cont2 {
+                    grid-area: cont2;
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                        object-position: center;
+                    }
+                }
+
+                .cont3 {
+                    grid-area: cont3;
+                }
+                
+                .cont4 {
+                    grid-area: cont4;
+
+                    
+                }
+            }
+        }
+    }
+}
+
+.container-slider-infinity {
+    width: 100%;
+    height: 20rem;
+    overflow: hidden;
+    border: 2px solid #ccc;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    position: relative;
+
+}
+
+
+.slider-track {
+    display: flex;
+    width: calc(30rem * 4); 
+    animation: scroll 32s linear infinite;
+    height: 20rem;
+}
+
+.slide-infi {
+    width: 30rem;
+    flex-shrink: 0;
+}
+
+.slide-infi img {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(calc(-30rem * 4)); 
+    }
+}
+
+
+@media  (max-width: 768px) {
+    header {
+        display: none;
+    }
+
+    .main {
+        
+        height: 50rem;
+        align-items: start;
+        margin-top: 2rem;
+        .backgroundWrapper {
+            display: none;
+        }
+
+        .mainContainer {
+            flex-direction: column;
+            gap: 0;
+            margin-top: 0;
+            width: 90%;
+            height: 100%;
+            .mainText {
+                margin-left: 0;
+                width: 100%;
+                height: 100%;
+                h1 {
+                    color: #1904da;
+                    font-size: 3rem;
+                }
+
+                .line {
+                    background: #1904da;
+                }
+
+                p {
+                    color: #1904da;
+                }
+
+                .auspiciadoresContainer {
+                    margin-top: 3rem;
+                    position: relative;
+                    h2 {
+                        color: #1904da;
+                    }
+
+                    .auspiciadores {
+                        gap: 1rem;
+                        display: grid;
+                        grid-template-columns: 1fr 1fr;
+                        img {
+                            width: 180px;
+                        }
+                    }
+                }
+            }
+
+            .mainCard {
+            display: none;
+            }   
+        }
+    }
+
+    .upfront {
+        width: 100%;
+
+        .upfrontContainer {
+            width: 90%;
+            margin-top: 10rem;
+            gap: 3rem;
+
+            .servicesContainer {
+                width: 100%;
+                h2 {
+                    font-size: 2rem;
+                }
+
+                .textService {
+                    p {
+                        font-size: 1.3rem;
+                    }
+                }
+
+                .services {
+                    display: flex;
+                    flex-direction: column;
+
+                    .service {
+                        img {
+                            height: 15rem;
+                        }
+
+                        p {
+                            font-size: 1.3rem;
+                            margin: 1rem;
+                        }
+                    }
+                }
+
+            }
+
+            .trabajosContainer {
+
+                .titleTrabajos {
+                    width: 100%;
+                    background:#fff;
+                    position: relative;
+
+                    h2 {
+                        color: #1904da;
+
+                    }
+                }
+
+                .renovation, .reparacion, .fabricacion, .ventasInsta {
+                    margin-top: 1rem;
+                    display: flex;
+                    background: #Fff;
+                    h3 {
+                        font-size: 2rem;
+                        color: #1904da;
+                    }
+
+                    div {
+                        display: none;
+                    }
+
+                }
+
+                .galeryContainer {
+                    width: 90%;
+
+                    .gallery {
+                        grid-template-columns: 1fr 1fr;
+                    }
+                }
+            }
+
+            .contrato {
+                display: flex;
+                flex-direction: column;
+                gap: 2rem;
+                align-content: center;
+
+                .contratoText {
+                    width: 100%;
+                    margin: 0;
+                    h4 {
+                        font-size: 1.1rem;
+                        font-weight: 600;
+                    }
+                }
+
+                .contraContain {
+                
+                    height: 15rem;
+    
+                    div {
+                        height: 5rem;
+                    }
+                }
+            }
+
+            
+        }
+
+    }
+}   
